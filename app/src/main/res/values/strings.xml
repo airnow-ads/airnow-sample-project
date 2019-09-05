@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Airnow Demo Ads</string>
+
+
+    <string name="title_banner_overlay">Banner: Overlay option</string>
+    <string name="title_banner_in_feed">Banner: In feed option</string>
+    <string name="title_fullscreen">Fullscreen</string>
+    <string name="title_piracy_ads">Piracy Ads</string>
+    <string name="description_banner_overlay">Banners of varying sizes that can be displayed anywhere within your app on top of an app content.</string>
+    <string name="description_banner_in_feed">Banners of varying sizes that can be embedded into the screen layout.</string>
+    <string name="description_fullscreen">Full-page banners that fill the entire screen.</string>
+    <string name="description_piracy_ads">Check monetization options even if your app was pirated.</string>
+
+    <string name="feed_item_title1">Neural networks</string>
+    <string name="feed_item_title2">From bricks to nanomaterials: the evolution of composites. </string>
+    <string name="feed_item_title3">Emil Akhmedov: “Everything that can be checked, needs…</string>
+
+    <string name="feed_item_text1">Computer and Communication Networks Specialist Erol Gelenbe on the history of the study of neural networks, the creation of…</string>
+    <string name="feed_item_text2">As a simple idea to combine several materials in one helps…</string>
+    <string name="feed_item_text3">Conversation with physicist Emil Akhmedov about understanding quantum physics…</string>
+
+    <string-array name="feed_item_title">
+        <item>@string/feed_item_title1</item>
+        <item>@string/feed_item_title2</item>
+        <item>@string/feed_item_title3</item>
+    </string-array>
+
+    <string-array name="feed_item_text">
+        <item>@string/feed_item_text1</item>
+        <item>@string/feed_item_text2</item>
+        <item>@string/feed_item_text3</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="@dimen/card_margin">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/banner_overlay"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        app:contentPadding="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:onClick="onClick"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icon_banner_overlay"
+                android:layout_width="@dimen/card_icon_size"
+                android:layout_height="@dimen/card_icon_size"
+                android:src="@drawable/ic_banner_overlay"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/icon_banner_overlay"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:text="@string/title_banner_overlay"
+                    style="@style/ThemeOverlay.TitleText"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/card_margin"
+                    style="@style/ThemeOverlay.DescriptionText"
+                    android:text="@string/description_banner_overlay"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/banner_in_feed"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        app:contentPadding="@dimen/card_margin"
+        android:onClick="onClick"
+        android:layout_marginBottom="@dimen/card_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icon_banner_in_feed"
+                android:layout_width="@dimen/card_icon_size"
+                android:layout_height="@dimen/card_icon_size"
+                android:src="@drawable/ic_banner_in_feed"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/icon_banner_in_feed"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:text="@string/title_banner_in_feed"
+                    style="@style/ThemeOverlay.TitleText"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/card_margin"
+                    style="@style/ThemeOverlay.DescriptionText"
+                    android:text="@string/description_banner_in_feed"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fullscreen"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        app:contentPadding="@dimen/card_margin"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icon_fullscreen"
+                android:layout_width="@dimen/card_icon_size"
+                android:layout_height="@dimen/card_icon_size"
+                android:src="@drawable/ic_fullscreen"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/icon_fullscreen"
+                >
+                <TextView
+                    android:id="@+id/fullscreen_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/card_margin"
+                    android:text="@string/title_fullscreen"
+                    style="@style/ThemeOverlay.TitleText"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    />
+
+                <TextView
+                    android:id="@+id/fullscreen_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/card_margin"
+                    style="@style/ThemeOverlay.DescriptionText"
+                    android:text="@string/description_fullscreen"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

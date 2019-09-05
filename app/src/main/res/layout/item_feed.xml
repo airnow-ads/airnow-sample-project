@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:padding="@dimen/card_margin">
+    <ImageView
+        android:id="@+id/icon_feed"
+        android:layout_width="@dimen/card_icon_size"
+        android:layout_height="@dimen/card_icon_size"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/icon_feed"
+        >
+        <TextView
+            android:id="@+id/title_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/card_margin"
+            style="@style/ThemeOverlay.DescriptionText"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/margin_small"
+            />
+
+        <TextView
+            android:id="@+id/text_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/card_margin"
+            style="@style/ThemeOverlay.DescriptionText"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
